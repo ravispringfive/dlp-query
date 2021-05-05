@@ -1,1 +1,1 @@
-web: gunicorn dlp-query-api-test.wsgi:application --preload --workers 1
+web: gunicorn dlp-query-api-test.wsgi:application --log-file - --log-level debug
