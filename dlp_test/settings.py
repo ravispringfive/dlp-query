@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-td$^tnd%*_kf2ruk%%@px3mnlns@j8l!)3l&+n#mtue2a6fl6+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dlp-query-api-test.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -58,11 +58,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8080',
-    'https://dlp-query-api-test.herokuapp.com',
-)
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'dlp_test.urls'
 
